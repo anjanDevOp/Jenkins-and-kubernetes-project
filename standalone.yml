@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: anjanpod
   labels:
-    app.kubernetes.io/name: proxy
+    app: proxy
 spec:
   containers:
   - name: anjancontainer
@@ -19,7 +19,7 @@ metadata:
   name: anjan-service
 spec:
   selector:
-    app.kubernetes.io/name: proxy
+    app: proxy
   ports:
    - port: 80
      targetPort: 8080
