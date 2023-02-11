@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: Anjan
+  name: anjan
   labels:
     app.kubernetes.io/name: proxy
 spec:
