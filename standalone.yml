@@ -8,6 +8,7 @@ metadata:
      - key: "node-role.kubernetes.io/master"
        operator: "Exists"
        effect: "NoSchedule"
+       
 spec:
   containers:
   - name: manjacontainer
