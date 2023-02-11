@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: anjan
+  name: anjanpod
   labels:
     app.kubernetes.io/name: proxy
 spec:
   containers:
-  - name: Anjan
+  - name: anjancontainer
     image: anjandevop/maven-standalone-application
     ports:
       - containerPort: 8080
