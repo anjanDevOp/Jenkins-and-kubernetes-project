@@ -6,8 +6,8 @@ RUN apk update && apk add /bin/sh
 RUN mkdir -p /opt/app
 ENV PROJECT_HOME /opt/app
 
-COPY target/maven-web-application.war $PROJECT_HOME/maven-web-application.war
+COPY target/maven-standalone-application.jar $PROJECT_HOME/maven-standalone-application
 
 WORKDIR $PROJECT_HOME
 EXPOSE 8080
-CMD ["java" ,"-jar","./spring-boot-mongo.jar"]
+CMD ["java" ,"-jar","./maven-standalone-application"]
