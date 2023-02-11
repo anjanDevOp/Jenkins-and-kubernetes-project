@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: anjanpod
+  name: pavanpod
   labels:
     app: proxy
 spec:
   containers:
-  - name: anjancontainer
+  - name: pavancontainer
     image: anjandevop/maven-standalone-application
     ports:
       - containerPort: 8080
@@ -16,7 +16,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: anjan-service
+  name: pavan-service
 spec:
   selector:
     app: proxy
