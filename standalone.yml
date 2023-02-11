@@ -10,7 +10,11 @@ spec:
     image: anjandevop/maven-standalone-application
     ports:
       - containerPort: 8080
-        
+    tolerations:
+     - key: "node-role.kubernetes.io/master"
+       operator: "Exists"
+       effect: "NoSchedule"
+         
 
 ---
 apiVersion: v1
