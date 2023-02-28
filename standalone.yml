@@ -4,10 +4,7 @@ metadata:
   name: manjapod
   labels:
     app: proxy
-  tolerations:
-     - key: "node-role.kubernetes.io/master"
-       operator: "Exists"
-       effect: "NoSchedule"
+  
        
 spec:
   containers:
